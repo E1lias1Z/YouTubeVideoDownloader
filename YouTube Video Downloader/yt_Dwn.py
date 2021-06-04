@@ -98,7 +98,8 @@ class MainProgram:
         Label(text="Folder:", font="Arial 12").grid(row=6, column=0, padx=20)
         Label(text=r''' e. g. C:\Users\USER\Downloads''', font="Arial 10").grid(row=7, column=1)
         folder_Entry = Entry(self.window, textvariable=self.download_folder, width=60).grid(row=6, column=1)
-    
+        
+#-------------------------------------------------------------------------------------------------------------------------
     #download playlist function
     def download_playlist(self):
         try:
@@ -129,14 +130,7 @@ class MainProgram:
 
 #--------------------------------------------------------------------------------------------
 
-app = MainProgram(570, 300)
+app = MainProgram(570, 280)
 app.run()
-
-
-# def progressBar_Step():
-#     for k in range(10):
-#         window.update_idletasks()
-#         progress['value']+= 4
-#         time.sleep(1)
 
 #----------------------------------------------------------------------------------------------------------------
